@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <nav class="bg-yellow-500 fixed w-full z-50 top-0 start-0 shadow-b shadow-default">
+    <header class="bg-yellow-500 fixed w-full z-50 top-0 start-0 shadow-b shadow-default">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <div class="flex items-center space-x-3 rtl:space-x-reverse">
                 <svg preserveAspectRatio="xMidYMid meet" data-bbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" height="54" width="54" data-type="color" role="presentation" aria-hidden="true" aria-label="">
@@ -44,26 +44,18 @@
                 <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/></svg>
             </button>
             <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-            <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-base bg-neutral-secondary-soft md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0">
-                <li>
-                    <a href="home" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Home</a>
-                </li>
-                <li>
-                    <a href="profile" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Our Profile</a>
-                </li>
-                <li>
-                    <a href="home#portfolio" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Portfolio</a>
-                </li>
-                <li>
-                    <a href="home#message" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Message Us</a>
-                </li>
-            </ul>
+                <nav class="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-base bg-neutral-secondary-soft md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0">
+                    <a href="#home" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Home</a>
+                    <a href="#profile" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Our Profile</a>
+                    <a href="#portfolio" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Portfolio</a>
+                    <a href="#message" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Message Us</a>
+                </nav>
             </div>
         </div>
-    </nav>
+    </header>
 
-    <div id="home" class="page mt-20 mb-10 md:mb-20 flex-wrap">
-        <div id="default-carousel" class="relative overflow-hidden" data-carousel="static">
+    <main class="page mt-20 mb-10 md:mb-20 flex-wrap">
+        <section id="home" class="relative overflow-hidden" data-carousel="static">
             <!-- Carousel wrapper -->
             <div class="relative h-80 md:h-96" data-carousel-inner>
                 <!-- Item 1 -->
@@ -71,10 +63,8 @@
                     <img src="https://flowbite.com/docs/images/carousel/carousel-1.svg"
                         class="object-cover w-full h-full" alt="Slide 1">
                     <span class="absolute top-1/4 md:top-1/8 left-1/4 md:left-1/8 transform -translate-x-1/4 md:-translate-x-1/8 -translate-y-1/4 md:-translate-y-1/8 text-white dark:text-gray-800">
-                        <h1 class="text-3xl font-bold underline text-clifford">
-                            Hi <span id="name"></span>, Welcome To Website
-                        </h1>
-                        <p>Ini adalah website latihan pertama</p>
+                        <h1 class="text-3xl font-bold" id="welcome-speech"></h1>
+                        <p>We are glad to have you here. </p>
                     </span>
                 </div>
                 <!-- Item 2 -->
@@ -111,107 +101,10 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                 </svg>
             </button>
-        </div>
-        <div id="portfolio" class="p-6">
-            <h2 class="text-2xl font-bold text-gray-800 mb-4">Our Headquarter</h2>
-            <div class="inline-block max-w-sm mr-5 rounded overflow-hidden shadow-lg">
-                <img class="w-full" src="https://images.unsplash.com/photo-1555899434-94d1368aa7af?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Jakarta">
-                <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2">Jakarta</div>
-                </div>
-            </div>
+        </section>
 
-            <div class="inline-block max-w-sm mr-5 rounded overflow-hidden shadow-lg">
-                <img class="w-full" src="https://cdn.pixabay.com/photo/2021/12/02/01/22/city-6839388_1280.jpg" alt="Bandung">
-                <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2">Bandung</div>
-                </div>
-            </div>
-
-            <div class="inline-block max-w-sm mr-5 rounded overflow-hidden shadow-lg">
-                <img class="w-full" src="https://images.unsplash.com/photo-1571927058357-2827bb49bc68?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Surabaya">
-                <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2">Surabaya</div>
-                </div>
-            </div>
-        </div>
-        <div id="message" class="p-6">
-            <h2 class="text-2xl font-bold text-gray-800 mb-4">Message Us</h2>
-            <div class="flex flex-wrap -mx-2">
-                <form id="message_form" class="w-full md:w-6/12 px-2">
-                    <div class="md:flex md:items-center mb-6">
-                        <div class="md:w-1/4">
-                            <label class="block text-gray-500 font-bold mb-1 md:mb-0 pr-4" for="nama">
-                                Nama
-                            </label>
-                        </div>
-                        <div class="md:w-3/4">
-                            <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"  placeholder="Nama" name="nama" id="nama" />
-                        </div>
-                    </div>
-
-                    <div class="md:flex md:items-center mb-6">
-                        <div class="md:w-1/4">
-                            <label class="block text-gray-500 font-bold mb-1 md:mb-0 pr-4" for="tanggal_lahir">
-                                Tanggal Lahir
-                            </label>
-                        </div>
-                        <div class="md:w-3/4">
-                            <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" type="date" name="tanggal_lahir" id="tanggal_lahir" />
-                        </div>
-                    </div>
-
-                    <div class="md:flex md:items-center mb-6">
-                        <div class="md:w-1/4">
-                            <label class="block text-gray-500 font-bold mb-1 md:mb-0 pr-4" for="nama">
-                                Jenis Kelamin
-                            </label>
-                        </div>
-                        <div class="md:w-3/4">
-                            <label class="md:w-1/2 text-gray-500 font-bold mr-12">
-                                <input class="mr-2 leading-tight" type="radio" name="kelamin" value="Laki-Laki">
-                                <span class="text-sm">
-                                    Laki-Laki
-                                </span>
-                            </label>
-
-                            <label class="md:w-1/2 text-gray-500 font-bold">
-                                <input class="mr-2 leading-tight" type="radio" name="kelamin" id="Perempuan">
-                                <span class="text-sm">
-                                    Perempuan
-                                </span>
-                            </label>
-                        </div>
-                    </div>
-
-                    <div class="md:flex md:items-center mb-6">
-                        <div class="md:w-1/4">
-                            <label class="block text-gray-500 font-bold mb-1 md:mb-0 pr-4" for="pesan">
-                                Pesan
-                            </label>
-                        </div>
-                        <div class="md:w-3/4">
-                            <textarea class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" type="date" name="pesan" id="pesan"></textarea>
-                        </div>
-                    </div>
-
-                    <div class="md:flex md:items-center mb-6 md:mb-0">
-                        <button class="shadow w-full bg-yellow-500 hover:bg-yellow-400 focus:shadow-outline focus:outline-none font-bold py-2 px-4 rounded" type="submit">
-                            Submit
-                        </button>
-                    </div>
-                </form>
-                <div class="w-full md:w-6/12 px-2">
-                    <textarea class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="sent_message" rows="15" readonly></textarea>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="profile" class="page hidden mt-20 mb-30 flex-wrap">
-        <img class="w-full" src="https://storage.googleapis.com/danacita-website-v3-prd/website_v3/images/Biaya_bootcamp_RevoU_6.original.png"/>
-        <div id="about" class="p-6">
-            <h2 class="text-2xl font-bold text-gray-800 mb-4">About the Company</h2>
+        <section id="profile" class="bg-yellow-100 p-6">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Our Profile</h2>
             <p class="mb-4">RevoU is one of Indonesia's leading online education technology (EdTech) platforms, focusing on equipping students with high-demand digital skills. It operates as an immersive "bootcamp" academy designed to bridge the gap between traditional education and the needs of the modern tech industry.</p>
             <p>Here is a brief breakdown of what they offer:</p>
             
@@ -282,26 +175,106 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div id="teams" class=" bg-yellow-100 p-6">
-            <h2 class="text-2xl font-bold text-gray-800 mb-4">Company Vision</h2>
-            <p>RevoU aspires to transform the state of higher education in Southeast Asia.</p>
-            <p>Their long-term goal is to build a more effective, meritocratic alternative to traditional universities—one that serves the actual needs of the digital economy. Ultimately, they aim to positively impact and change the lives of millions of people by providing access to life-changing career opportunities.</p>
-        </div>
+        <section id="portfolio" class="p-6">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Portfolio</h2>
+            <div class="inline-block max-w-sm md:mr-5 mb-5 rounded overflow-hidden shadow-lg">
+                <img class="w-full" src="https://images.unsplash.com/photo-1555899434-94d1368aa7af?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Jakarta">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">Jakarta</div>
+                </div>
+            </div>
 
-        <div id="teams" class="p-6">
-            <h2 class="text-2xl font-bold text-gray-800 mb-4">Company Mission</h2>
-            <p class="mb-4">RevoU’s mission is to <b>bridge the skills gap</b> between traditional education and the modern technology industry.</p>
-            <p>They achieve this by:</p>
-            <ul class="ml-3 list-disc list-inside">
-                <li><b>Equipping Students:</b> Providing ambitious individuals with high-demand, practical digital skills that companies are actively hiring for.</li>
-                <li><b>Unlocking Potential:</b> Obsessing over student success to help every individual achieve their maximum professional potential, regardless of their background.</li>
-                <li><b>Empowering Companies:</b> Helping organizations grow by matching them with high-quality, job-ready talent.</li>
-            </ul>
-        </div>
-    </div>
-    <footer class="fixed bottom-0 left-0 z-20 w-full p-4 bg-yellow-500 shadow-sm md:flex md:items-right md:justify-between md:p-6">
+            <div class="inline-block max-w-sm md:mr-5 mb-5 rounded overflow-hidden shadow-lg">
+                <img class="w-full" src="https://cdn.pixabay.com/photo/2021/12/02/01/22/city-6839388_1280.jpg" alt="Bandung">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">Bandung</div>
+                </div>
+            </div>
+
+            <div class="inline-block max-w-sm md:mr-5 mb-5 rounded overflow-hidden shadow-lg">
+                <img class="w-full" src="https://images.unsplash.com/photo-1571927058357-2827bb49bc68?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Surabaya">
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">Surabaya</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="message" class="bg-yellow-100 p-6">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Message Us</h2>
+            <div class="flex flex-wrap -mx-2">
+                <form id="message_form" class="w-full md:w-6/12 px-2">
+                    <div class="md:flex md:items-center mb-6">
+                        <div class="md:w-1/4">
+                            <label class="block text-gray-500 font-bold mb-1 md:mb-0 pr-4" for="nama">
+                                Nama
+                            </label>
+                        </div>
+                        <div class="md:w-3/4">
+                            <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"  placeholder="Nama" name="nama" id="nama" />
+                        </div>
+                    </div>
+
+                    <div class="md:flex md:items-center mb-6">
+                        <div class="md:w-1/4">
+                            <label class="block text-gray-500 font-bold mb-1 md:mb-0 pr-4" for="tanggal_lahir">
+                                Tanggal Lahir
+                            </label>
+                        </div>
+                        <div class="md:w-3/4">
+                            <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" type="date" name="tanggal_lahir" id="tanggal_lahir" />
+                        </div>
+                    </div>
+
+                    <div class="md:flex md:items-center mb-6">
+                        <div class="md:w-1/4">
+                            <label class="block text-gray-500 font-bold mb-1 md:mb-0 pr-4" for="nama">
+                                Jenis Kelamin
+                            </label>
+                        </div>
+                        <div class="md:w-3/4">
+                            <label class="md:w-1/2 text-gray-500 font-bold mr-12">
+                                <input class="mr-2 leading-tight" type="radio" name="kelamin" value="Laki-Laki">
+                                <span class="text-sm">
+                                    Laki-Laki
+                                </span>
+                            </label>
+
+                            <label class="md:w-1/2 text-gray-500 font-bold">
+                                <input class="mr-2 leading-tight" type="radio" name="kelamin" id="Perempuan">
+                                <span class="text-sm">
+                                    Perempuan
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="md:flex md:items-center mb-6">
+                        <div class="md:w-1/4">
+                            <label class="block text-gray-500 font-bold mb-1 md:mb-0 pr-4" for="pesan">
+                                Pesan
+                            </label>
+                        </div>
+                        <div class="md:w-3/4">
+                            <textarea class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" type="date" name="pesan" id="pesan"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="md:flex md:items-center mb-6 md:mb-0">
+                        <button class="shadow w-full bg-yellow-500 hover:bg-yellow-400 focus:shadow-outline focus:outline-none font-bold py-2 px-4 rounded" type="submit">
+                            Submit
+                        </button>
+                    </div>
+                </form>
+                <div class="w-full md:w-6/12 px-2">
+                    <textarea class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="sent_message" rows="15" readonly></textarea>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="fixed bottom-0 left-0 z-20 w-full p-4 bg-yellow-500 shadow-sm md:flex md:justify-end md:p-6">
         Created By RevoU
     </footer>
     <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
